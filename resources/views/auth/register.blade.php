@@ -20,9 +20,24 @@
                         </label>
 
                         <input id="name" type="text" class="form-input w-full @error('name')  border-red-500 @enderror"
-                            name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                            name="name" value="{{ old('name') }}"  autocomplete="name" autofocus>
 
                         @error('name')
+                        <p class="text-red-500 text-xs italic mt-4">
+                            {{ $message }}
+                        </p>
+                        @enderror
+                    </div>
+
+                    <div class="flex flex-wrap">
+                        <label for="username" class="block text-gray-700 text-sm font-bold mb-2 sm:mb-4">
+                            {{ __('username') }}:
+                        </label>
+
+                        <input id="username" type="text" class="form-input w-full @error('username')  border-red-500 @enderror"
+                            name="username" value="{{ old('username') }}"  autocomplete="username" autofocus>
+
+                        @error('username')
                         <p class="text-red-500 text-xs italic mt-4">
                             {{ $message }}
                         </p>
@@ -36,7 +51,7 @@
 
                         <input id="email" type="email"
                             class="form-input w-full @error('email') border-red-500 @enderror" name="email"
-                            value="{{ old('email') }}" required autocomplete="email">
+                            value="{{ old('email') }}"  autocomplete="email">
 
                         @error('email')
                         <p class="text-red-500 text-xs italic mt-4">
@@ -52,7 +67,7 @@
 
                         <input id="password" type="password"
                             class="form-input w-full @error('password') border-red-500 @enderror" name="password"
-                            required autocomplete="new-password">
+                             autocomplete="new-password">
 
                         @error('password')
                         <p class="text-red-500 text-xs italic mt-4">
@@ -67,7 +82,7 @@
                         </label>
 
                         <input id="password-confirm" type="password" class="form-input w-full"
-                            name="password_confirmation" required autocomplete="new-password">
+                            name="password_confirmation" autocomplete="new-password">
                     </div>
 
                     <div class="flex flex-wrap">

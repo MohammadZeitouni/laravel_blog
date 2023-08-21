@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 
 class TagController extends Controller
 {
+
     public function __construct()
     {
         $this->middleware('auth');
@@ -37,19 +38,8 @@ class TagController extends Controller
             'tag' => $request->input('tag'),
         ]);
 
-        return redirect('/tag')->with('successCreated','Tag It Is Created');
-    }
-
-
-    public function edit(Tag $tag)
-    {
-        //
-    }
-
-
-    public function update(Request $request, Tag $tag)
-    {
-        //
+        return redirect('/tag')
+        ->with('successCreated','Tag It Is Created');
     }
 
 

@@ -10,6 +10,9 @@ class Tag extends Model
     use HasFactory;
 
     protected $fillable = ['tag'];
+
+
+    
     public function scopeFilter($query, array $filters)
     {
         $query->when($filters['search'] ?? false, fn($query, $search) =>

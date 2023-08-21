@@ -1,4 +1,7 @@
 @extends('layouts.app')
+@section('title')
+   Tag Page
+@endsection
 @section('content')
     <x-main>All Tags</x-main>
 
@@ -8,7 +11,7 @@
             <div class="col-start">
                 <x-tags.linkTag name='Create Tag' link='/create' color='green'/>
             </div>
-        @endif 
+        @endif
         <x-search name='search' action='tag'/>
     </div>
     <div class="container mx-auto">

@@ -1,10 +1,13 @@
 @extends('layouts.app')
+@section('title')
+   Create Post
+@endsection
 @section('content')
 
 
 <x-main>Create Post</x-main>
 <div class="container mx-auto  pt-15 pb-5">
-    <form 
+    <form
         action="/blog"
         method="POST"
         enctype="multipart/form-data"
@@ -19,7 +22,7 @@
                 <option value="{{ $item->id }}" class="ml-2  hover:bg-gray-200 text-lg">{{ $item->tag }}</option>
                 @endforeach
             </select>
-        </div>   
+        </div>
         <x-inpute.image name='image' class='col-span-2'/>
         <x-inpute.button name='button' text='Submit the post' color='green'/>
     </form>

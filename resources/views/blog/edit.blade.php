@@ -1,9 +1,12 @@
 @extends('layouts.app')
+@section('title')
+   Edit Post
+@endsection
 @section('content')
 
 <x-main>Edit Post</x-main>
 <div class="container mx-auto  pt-15 pb-5">
-    <form 
+    <form
         action="/blog/{{$post->slug}}"
         method="POST"
         enctype="multipart/form-data"

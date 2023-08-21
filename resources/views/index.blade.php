@@ -1,4 +1,7 @@
 @extends('layouts.app')
+@section('title')
+   Zeitouni
+@endsection
 @section('content')
 
     {{-- HERO --}}
@@ -19,13 +22,13 @@
             </p>
 
             <p class="py-4 text-gray-500 text-sm leading-5">
-                Lorem ipsum dolor sit, amet consectetur 
+                Lorem ipsum dolor sit, amet consectetur
                 adipisicing elit. Esse dolor unde nam?
                 Voluptatibus quod laboriosam porro maxime
-                sed, est ea vero dicta suscipit minus delectus 
+                sed, est ea vero dicta suscipit minus delectus
                 facere possimusut iste cupiditate.
             </p>
-            
+
             <a href="/" class="bg-gray-700 text-gray-100 py-4 px-5 rounded-lg font-bold uppercase text-l place-self-start">Read More</a>
         </div>
     </div>
@@ -44,15 +47,15 @@
     <div class="container mx-auto text-center p-15">
         <h2 class="font-bold text-5xl py-10">Recent Posts</h2>
         <p class="text-gray-400 leading-6 px-10">
-            Lorem ipsum dolor sit amet consectetur, 
-            adipisicing elit. Harum officia suscipit 
-            expedita nemo tempora aperiam odit fugit 
-            voluptates odio illum maxime, nobis error 
+            Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Harum officia suscipit
+            expedita nemo tempora aperiam odit fugit
+            voluptates odio illum maxime, nobis error
             qui vitae natus enim soluta fugiat aspernatur!
-            Lorem ipsum dolor sit amet consectetur, 
-            adipisicing elit. Harum officia suscipit 
-            expedita nemo tempora aperiam odit fugit 
-            voluptates odio illum maxime, nobis error 
+            Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Harum officia suscipit
+            expedita nemo tempora aperiam odit fugit
+            voluptates odio illum maxime, nobis error
             qui vitae natus enim soluta fugiat aspernatur!
         </p>
     </div>
@@ -65,14 +68,14 @@
                     <li class="bg-yellow-100 text-yellow-700 p-2 rounded inline-block  my-1 md:my-0 hover:bg-yellow-500 hover:text-yellow-100 transition duration-300"><a href="/">Backend</a></li>
                 </ul>
                 <h3 class="text-l py-10 leading-6">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing 
-                    elit. Exercitationem eius pariatur minus mollitia 
-                    quasi eos repellendus laudantium, sed perspiciatis 
+                    Lorem ipsum dolor sit amet consectetur, adipisicing
+                    elit. Exercitationem eius pariatur minus mollitia
+                    quasi eos repellendus laudantium, sed perspiciatis
                     deserunt esse nisi tempora blanditiis iusto at
                     nemo saepe voluptatum asperiores.Lorem ipsum dolor
                     sit amet consectetur, adipisicing voluptatum asperiores
-                    elit. Exercitationem eius pariatur minus mollitia 
-                    quasi eos repellendus laudantium, sed perspiciatis 
+                    elit. Exercitationem eius pariatur minus mollitia
+                    quasi eos repellendus laudantium, sed perspiciatis
                     deserunt esse nisi tempora blanditiis iusto at
                     nemo saepe voluptatum asperiores.
                 </h3>

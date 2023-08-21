@@ -1,10 +1,13 @@
 @extends('layouts.app')
+@section('title')
+   Create Tag
+@endsection
 @section('content')
 
 
 <x-main>Create Tag</x-main>
 <div class="container mx-auto  pt-15 pb-5">
-    <form 
+    <form
         action="/tag"
         method="POST"
     >

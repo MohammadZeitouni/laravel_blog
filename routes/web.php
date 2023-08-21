@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\PostsController;
 use App\Http\Controllers\TagController;
+use App\Http\Controllers\HomeController;
+use Illuminate\Support\Facades\Auth;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,6 +20,6 @@ use App\Http\Controllers\TagController;
 Route::get('/', [PagesController::class,'index']);
 Route::resource('/blog',PostsController::class);
 Route::resource('/tag',TagController::class);
+Route::get('/Notification/markASRead', [PostsController::class,'markASRead'])->name('Notification.read');
 Auth::routes();
-Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
+Route::get('/home', [HomeController::class, 'index'])->name('home');

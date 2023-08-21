@@ -1,10 +1,13 @@
 @extends('layouts.app')
+@section('title')
+   Show Post
+@endsection
 @section('content')
 
 <div class="container mx-auto text-center pt-15 pb-5">
     <h1 class="text-6xl font-bold">{{$post->title}}</h1>
     <div class="mt-2">
-        By: <span class="text-gray-500 italic">{{$post->user->name}}</span>
+        By : <span class="text-gray-500 italic">{{$post->user->username}}</span>
         on <span class="text-gray-500 italic">{{ date('d-m-Y',strtotime($post->updated_at)) }}</span>
     </div>
 
@@ -25,11 +28,11 @@
     <div class="m-5">
         <ul class="text-2xl flex"> <span class="text-gray-500 italic">Tags : </span>
         @foreach ($post->tags as $item)
-            <li class=" ml-3">{{$item->tag}}</li>
+            <li class="ml-4">{{$item->tag}}</li>
         @endforeach
         </ul>
     </div>
-        
+
     @endif
 </div>
 
